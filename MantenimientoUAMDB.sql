@@ -153,3 +153,78 @@ el donde estan y claramente el mantenimiento a darse */
 
 /* Siempre ponemos el is active en 1 por que es 0 y 1, False y True, ya que es True que 
 todas nuestras tablas estan activas, asi no las borramos */
+
+
+
+/* Inserts segun sus catalogos (schemas) */
+
+/* Schema 1 - Catalogo */
+
+-- Tabla Edificio
+INSERT INTO Catalogo.Edificio (nombreEdificio)
+VALUES 
+('EdificioC'),
+('EdificioO');
+
+-- Tabla TipoDispositivo
+INSERT INTO Catalogo.TipoDispositivo (nombreTipo)
+VALUES 
+('Computadora'),
+('Proyector');
+
+-- Tabla EstadoDispositivo
+INSERT INTO Catalogo.EstadoDispositivo (estado)
+VALUES 
+('Bueno'),
+('En Revisión'),
+('En Mantenimiento'),
+('Fuera de Servicio');
+
+-- Tabla TipoMantenimiento
+INSERT INTO Catalogo.TipoMantenimiento (nombreTipoMantenimiento)
+VALUES 
+('Preventivo'),
+('Correctivo');
+
+/* Schema 2 - Seguridad */
+
+-- Tabla Tecnico (El Schema es "seguridad" pq son quienes interactuan con el sistema)
+INSERT INTO Seguridad.Tecnico 
+(nombreTecnico, telefono, correo, departamento, fechaNacimiento)
+VALUES
+('Juan Pérez', '8564-5781', 'jup@uamv.edu.ni', 'Soporte Tecnico', '1990-03-15'),
+('Ana Gómez', '5875-4824', 'anago@uamv.edu.ni', 'Soporte Tecnico', '1992-07-21'),
+('Carlos Martínez', '6415-7545', 'carmar@uamv.edu.ni', 'Soporte Tecnico', '1988-11-09'),
+('María López', '6484-0514', 'marilo@uamv.edu.ni', 'Soporte Tecnico', '1995-01-30'),
+('José Ramírez', '5720-6187', 'josram@uamv.edu.ni', 'Soporte Tecnico', '1991-05-18'),
+('Lucía Hernández', '2486-7921', 'luchen@uamv.edu.ni', 'Soporte Tecnico', '1994-09-12'),
+('Pedro Castillo', '1627-4523', 'pecast@uamv.edu.ni', 'Soporte Tecnico', '1989-02-25'),
+('Sofía Torres', '7862-5884', 'sotor@uamv.edu.ni', 'Soporte Tecnico', '1996-12-14'),
+('Miguel Sánchez', '7874-9752', 'misan@uamv.edu.ni', 'Soporte Tecnico', '1993-04-08'),
+('Daniela Flores', '3875-9765', 'daflo@uamv.edu.ni', 'Soporte Tecnico', '1997-08-19'),
+('Andrés Morales', '2597-9865', 'andmor@uamv.edu.ni', 'Soporte Tecnico', '1990-10-27'),
+('Valeria Ruiz', '8965-3684', 'varuiz@uamv.edu.ni', 'Soporte Tecnico', '1998-06-03'),
+('Fernando Cruz', '5451-9860', 'fercruz@uamv.edu.ni', 'Soporte Tecnico', '1987-01-11'),
+('Camila Navarro', '9863-7821', 'canav@uamv.edu.ni', 'Soporte Tecnico', '1999-07-29'),
+('Ricardo Mendoza', '3972-6982', 'rimendo@uamv.edu.ni', 'Soporte Tecnico', '1992-03-05'),
+('Elena Vargas', '9864-5686', 'elevarg@uamv.edu.ni', 'Soporte Tecnico', '1995-11-22');
+
+/* Schema 3 - Mantenimiento */
+
+-- Tabla Salon
+INSERT INTO Mantenimiento.Salon (codigoSalon, piso, idEdificio)
+VALUES
+('C-107', 1, 1),
+('C-108', 1, 1),
+('C-201', 2, 1),
+('C-202', 2, 1),
+('C-203', 2, 1),
+('C-204', 2, 1),
+('C-205', 2, 1),
+('C-206', 2, 1),
+('C-207', 2, 1),
+('C-208', 2, 1),
+('C-209', 2, 1),
+('O-201', 2, 2);
+
+-- RESTANTES: DISPOSITIVO y MANTENIMIENTO
