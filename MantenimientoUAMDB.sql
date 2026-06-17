@@ -228,3 +228,29 @@ VALUES
 ('O-201', 2, 2);
 
 -- RESTANTES: DISPOSITIVO y MANTENIMIENTO
+-- SALON C-107 (idSalon = 1)
+('PC-C107-01', 1, 1, 2),
+('PC-C107-02', 1, 1, 1),
+('PC-C107-03', 1, 1, 3),
+('PC-C107-04', 1, 1, 2),
+('PC-C107-05', 1, 1, 1),
+('PC-C107-06', 1, 1, 1),
+('PC-C107-07', 1, 1, 2),
+('PC-C107-08', 1, 1, 1),
+('PC-C107-09', 1, 1, 3),
+('PC-C107-10', 1, 1, 1),
+('PROY-C107', 2, 1, 1),
+
+-- SALON C-108 (idSalon = 2)
+('PC-C108-01', 1, 2, 1),
+('PC-C108-02', 1, 2, 1),
+('PC-C108-03', 1, 2, 2),
+('PC-C108-04', 1, 2, 1),
+('PC-C108-05', 1, 2, 1),
+('PC-C108-06', 1, 2, 3),
+('PC-C108-07', 1, 2, 1),
+('PC-C108-08', 1, 2, 1),
+('PC-C108-09', 1, 2, 2),
+('PC-C108-10', 1, 2, 1),
+('PROY-C108', 2, 2, 1);
+--Estos son todos los dispositivos con los que cuentan las aulas UAM en el primer piso del edificio C
