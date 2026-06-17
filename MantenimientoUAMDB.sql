@@ -212,19 +212,85 @@ VALUES
 /* Schema 3 - Mantenimiento */
 
 -- Tabla Salon
-INSERT INTO Mantenimiento.Salon (codigoSalon, piso, idEdificio)
-VALUES
-('C-107', 1, 1),
-('C-108', 1, 1),
-('C-201', 2, 1),
-('C-202', 2, 1),
-('C-203', 2, 1),
-('C-204', 2, 1),
-('C-205', 2, 1),
-('C-206', 2, 1),
-('C-207', 2, 1),
-('C-208', 2, 1),
-('C-209', 2, 1),
-('O-201', 2, 2);
+-- ============================================================
+-- INSERT Mantenimiento.Dispositivo
+-- 380 dispositivos: 368 computadoras + 12 proyectores
+-- Columnas: codigoDispositivo, idTipoDispositivo, idSalon, idEstado
+-- idTipoDispositivo: 1 = Computadora | 2 = Proyector
+-- idEstado: 1 = Bueno | 2 = En Revisión | 3 = En Mantenimiento | 4 = Fuera de Servicio
+-- ============================================================
 
--- RESTANTES: DISPOSITIVO y MANTENIMIENTO
+-- SALON C-107 (idSalon = 1) — 32 PCs + 1 Proyector
+INSERT INTO Mantenimiento.Dispositivo (codigoDispositivo, idTipoDispositivo, idSalon, idEstado)
+VALUES
+('PC-C107-01', 1, 1, 2),
+('PC-C107-02', 1, 1, 1),
+('PC-C107-03', 1, 1, 3),
+('PC-C107-04', 1, 1, 2),
+('PC-C107-05', 1, 1, 1),
+('PC-C107-06', 1, 1, 1),
+('PC-C107-07', 1, 1, 1),
+('PC-C107-08', 1, 1, 1),
+('PC-C107-09', 1, 1, 1),
+('PC-C107-10', 1, 1, 1),
+('PC-C107-11', 1, 1, 1),
+('PC-C107-12', 1, 1, 1),
+('PC-C107-13', 1, 1, 1),
+('PC-C107-14', 1, 1, 1),
+('PC-C107-15', 1, 1, 1),
+('PC-C107-16', 1, 1, 1),
+('PC-C107-17', 1, 1, 1),
+('PC-C107-18', 1, 1, 1),
+('PC-C107-19', 1, 1, 1),
+('PC-C107-20', 1, 1, 1),
+('PC-C107-21', 1, 1, 1),
+('PC-C107-22', 1, 1, 1),
+('PC-C107-23', 1, 1, 1),
+('PC-C107-24', 1, 1, 1),
+('PC-C107-25', 1, 1, 1),
+('PC-C107-26', 1, 1, 1),
+('PC-C107-27', 1, 1, 1),
+('PC-C107-28', 1, 1, 1),
+('PC-C107-29', 1, 1, 1),
+('PC-C107-30', 1, 1, 1),
+('PC-C107-31', 1, 1, 1),
+('PC-C107-32', 1, 1, 1),
+('PROY-C107',  2, 1, 1);
+
+-- SALON C-108 (idSalon = 2) — 32 PCs + 1 Proyector
+INSERT INTO Mantenimiento.Dispositivo (codigoDispositivo, idTipoDispositivo, idSalon, idEstado)
+VALUES
+('PC-C108-01', 1, 2, 1),
+('PC-C108-02', 1, 2, 1),
+('PC-C108-03', 1, 2, 1),
+('PC-C108-04', 1, 2, 1),
+('PC-C108-05', 1, 2, 1),
+('PC-C108-06', 1, 2, 1),
+('PC-C108-07', 1, 2, 1),
+('PC-C108-08', 1, 2, 1),
+('PC-C108-09', 1, 2, 1),
+('PC-C108-10', 1, 2, 1),
+('PC-C108-11', 1, 2, 1),
+('PC-C108-12', 1, 2, 1),
+('PC-C108-13', 1, 2, 1),
+('PC-C108-14', 1, 2, 1),
+('PC-C108-15', 1, 2, 1),
+('PC-C108-16', 1, 2, 1),
+('PC-C108-17', 1, 2, 1),
+('PC-C108-18', 1, 2, 1),
+('PC-C108-19', 1, 2, 1),
+('PC-C108-20', 1, 2, 1),
+('PC-C108-21', 1, 2, 1),
+('PC-C108-22', 1, 2, 1),
+('PC-C108-23', 1, 2, 1),
+('PC-C108-24', 1, 2, 1),
+('PC-C108-25', 1, 2, 1),
+('PC-C108-26', 1, 2, 1),
+('PC-C108-27', 1, 2, 1),
+('PC-C108-28', 1, 2, 1),
+('PC-C108-29', 1, 2, 1),
+('PC-C108-30', 1, 2, 1),
+('PC-C108-31', 1, 2, 1),
+('PC-C108-32', 1, 2, 1),
+('PROY-C108',  2, 2, 1);
+
