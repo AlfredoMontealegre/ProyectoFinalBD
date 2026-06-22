@@ -98,22 +98,6 @@ los tecnicos con los dispositivos */
 
 
 -- Tabla Salon
--- Tabla Salon: falta antes de insertar Dispositivo
-INSERT INTO Mantenimiento.Salon (codigoSalon, piso, idEdificio)
-VALUES
-('C-107', 1, 1),
-('C-108', 1, 1),
-('C-201', 2, 1),
-('C-202', 2, 1),
-('C-203', 2, 1),
-('C-204', 2, 1),
-('C-205', 2, 1),
-('C-206', 2, 1),
-('C-207', 2, 1),
-('C-208', 2, 1),
-('C-209', 2, 1),
-('O-201', 2, 2);
-
 CREATE TABLE Mantenimiento.Salon (
     idSalon INT IDENTITY PRIMARY KEY,
     codigoSalon VARCHAR(10) NOT NULL UNIQUE,
@@ -224,6 +208,23 @@ VALUES
 ('Camila Navarro', '9863-7821', 'canav@uamv.edu.ni', 'Soporte Tecnico', '1999-07-29'),
 ('Ricardo Mendoza', '3972-6982', 'rimendo@uamv.edu.ni', 'Soporte Tecnico', '1992-03-05'),
 ('Elena Vargas', '9864-5686', 'elevarg@uamv.edu.ni', 'Soporte Tecnico', '1995-11-22');
+
+-- Tabla Salon
+INSERT INTO Mantenimiento.Salon (codigoSalon, piso, idEdificio)
+VALUES
+('C-107', 1, 1),
+('C-108', 1, 1),
+('C-201', 2, 1),
+('C-202', 2, 1),
+('C-203', 2, 1),
+('C-204', 2, 1),
+('C-205', 2, 1),
+('C-206', 2, 1),
+('C-207', 2, 1),
+('C-208', 2, 1),
+('C-209', 2, 1),
+('O-201', 2, 2);
+GO
 
 /* Schema 3 - Mantenimiento */
 
